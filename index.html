@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <a href="https://staff_feedback/front.html"></a>
+<style>
+body{
+ background-image:url(https://upload.wikimedia.org/wikipedia/commons/f/fb/MailamEngineeringCollegeadminblock.jpg);
+ background-attachment:fixed;
+ background-size:cover;
+}
+</style>
+</head>
+<center>
+<h1><b>Mailam Engineering College</h1></b> 
+</center>
+<h2>Students Feedback For Staff</h2>
+    <form action="http://staff_feedback/front.html" method="post">
+
+<label for="Departments">Departments:</label>
+<select name="Departments" id="Departments" required="required">
+                                <option value="Select option">Select option</option>
+                                <option value="MCA">MCA</option>
+                                <option value="EEE">EEE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="IT">IT</option>
+                                <option value="MECHANICAL">MECHANICAL</option>
+                                <option value="CSE">CSE</option>
+                                <option value="MBA">MBA</option>
+                                <option value="ME">ME</option></select>
+       <br>
+        </br>
+        
+<label for="rating">Rating:</label>
+        <input type="Numbers" id="rating" name="rating" min="1" max="5"><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="10" cols="50"></textarea><br><br>
+        
+        <button  type="button" onclick="submit()">Submit</button>
+    </form>
+<script>
+    function submit(){
+    const departments=document.selectElementById("Departments").value;
+    const rating=document.getElementById("Rating").value;
+    const comment=document.getElementById("Comments").value;
+    }else{
+    alert("Please fill in all fields.");
+    }
+</script>
+</body>
+</html>
